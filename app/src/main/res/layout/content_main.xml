@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.cristiana.carangoapp.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/centerColor"
+        app:tabTextColor="@color/tab_unselect_text_color"
+        app:tabSelectedTextColor="@color/tab_select_text_color">
+
+
+    </android.support.design.widget.TabLayout>
+
+    <!--Faz o scroll lateral-->
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPager"
+        android:layout_below="@id/tabs"/>
+
+</RelativeLayout>
